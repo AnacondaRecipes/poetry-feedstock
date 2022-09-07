@@ -63,6 +63,8 @@ about:
   license_family: MIT
   license_file: LICENSE
   summary: Python dependency management and packaging made easy
+  doc_url: https://python-poetry.org/docs/
+  dev_url: https://github.com/python-poetry/poetry/
 
 extra:
   recipe-maintainers:
