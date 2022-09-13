@@ -41,7 +41,8 @@ requirements:
     - tomlkit >=0.7.0,<1.0.0
     - packaging >=20.4,<21.0
     - poetry-core >=1.0.0,<2.0.0
-    - virtualenv >=20.0.26,<20.5.0
+    - virtualenv >=20.0.26
+    - platformdirs >=2,<3
     - keyring >=21.2.0,<24.0.0  # [py>=36]
     # legacy python
     - importlib-metadata >=1.6.0,<2.0.0  # [py<38]
