@@ -9,7 +9,7 @@ source:
   sha256: 3833c7b22411b8393e8e594fede94f0ef7a5260c19f51e272cce76512cffe6c8
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<35]
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -41,7 +41,8 @@ requirements:
     - tomlkit >=0.7.0,<1.0.0
     - packaging >=20.4,<21.0
     - poetry-core >=1.0.0,<2.0.0
-    - virtualenv >=20.0.26,<21.0.0
+    - virtualenv >=20.0.26
+    - platformdirs >=2,<3
     - keyring >=21.2.0,<24.0.0  # [py>=36]
     # legacy python
     - importlib-metadata >=1.6.0,<2.0.0  # [py<38]
@@ -58,11 +59,13 @@ test:
     - poetry.config
 
 about:
-  home: https://poetry.eustace.io/
+  home: https://python-poetry.org/
   license: MIT
   license_family: MIT
   license_file: LICENSE
   summary: Python dependency management and packaging made easy
+  doc_url: https://python-poetry.org/docs/
+  dev_url: https://github.com/python-poetry/poetry/
 
 extra:
   recipe-maintainers:
