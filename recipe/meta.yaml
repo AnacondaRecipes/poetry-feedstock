@@ -21,7 +21,7 @@ requirements:
     - pip
     - setuptools
     - wheel
-    - poetry-core 1.5.2
+    - poetry-core 1.5.1
   run:
     - python
     - poetry-core
