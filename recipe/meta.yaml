@@ -85,11 +85,7 @@ about:
 
 extra:
   recipe-maintainers:
-    - Arun Babu Neelicattu
-    - Bjorn Neergaard
-    - Branch Vincent
-    - Bryce Drennan
-    - Daniel Eades
-    - Randy Döring
-    - Steph Samson
-    - finswimmer
+    - BastianZim
+    - ocefpaf
+    - maresb
+    - xylar
