@@ -1,18 +1,18 @@
 {% set name = "poetry" %}
-{% set version = "1.4.0" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 151ad741e163a329c8b13ea602dde979b7616fc350cfcff74b604e93263934a8
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: c6bc7e9d2d5aad4f6818cc5eef1f85fcfb7ee49a1aab3b4ff66d0c6874e74769
 
 build:
   number: 0
-  skip: true  # [py<38]
-  script: {{ PYTHON }} -m pip install --no-deps . -vv
+  skip: true  # [py<39]
+  script: {{ PYTHON }} -m pip install --no-deps . -vv --no-deps --no-build-isolation 
   entry_points:
     - poetry = poetry.console.application:main
 
